@@ -12,7 +12,7 @@ model = pickle.load(open('model/model_rossmann_retrained.pkl', 'rb'))
 # api
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/test')
 def test_status():
     return {'status': 'ok'}
 
